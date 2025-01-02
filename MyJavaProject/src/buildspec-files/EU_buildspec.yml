@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Building the JAR file..."
       - mvn clean package 
-      - ls -l
+      - ls -l target
 
 artifacts:
   files:
