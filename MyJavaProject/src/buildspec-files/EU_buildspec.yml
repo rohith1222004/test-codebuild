@@ -7,9 +7,12 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - echo "EU Builspec..."
+      - cd MyJavaProject/src  
+      - mvn install
   build:
     commands:
       - echo "Building the JAR file..."
+      - cd MyJavaProject/src
       - mvn clean package 
 
 artifacts:
