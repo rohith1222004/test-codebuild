@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo "Running batch builds..."
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: build1
+      buildspec: src/buildspec-files/US_buildspec.yml
+    - identifier: build2
+      buildspec: src/buildspec-files/EU_buildspec.yml
