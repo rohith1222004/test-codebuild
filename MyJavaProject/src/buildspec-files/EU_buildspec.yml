@@ -3,12 +3,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk11
+      java: corretto11
     commands:
       - echo "Installing dependencies..."
       - echo "EU Builspec..."
-      - mvn install
-
   build:
     commands:
       - echo "Building the JAR file..."

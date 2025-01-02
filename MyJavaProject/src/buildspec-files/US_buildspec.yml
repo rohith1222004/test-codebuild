@@ -3,11 +3,10 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk11
+      java: corretto11
     commands:
       - echo "Installing dependencies..."
       - echo "US Builspec..."
-      - mvn install
 
   build:
     commands:
@@ -18,4 +17,6 @@ artifacts:
   files:
     - target/my-java-project-1.0-SNAPSHOT.jar  
 
-
+  s3-prefix: us-jars/  
+  discard-paths: no 
+  base-directory: target 
