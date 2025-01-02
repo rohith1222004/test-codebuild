@@ -12,7 +12,6 @@ phases:
   build:
     commands:
       - echo "Building the JAR file..."
-      - cd MyJavaProject/src
       - mvn clean package 
 
 
