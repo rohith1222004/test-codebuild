@@ -9,6 +9,6 @@ batch:
   fast-fail: false
   build-list:
     - identifier: build1
-      buildspec: src/buildspec-files/EU_buildspec.yml
+      buildspec: MyJavaProject/src/buildspec-files/EU_buildspec.yml
     - identifier: build2
-      buildspec: src/buildspec-files/US_buildspec.yml
+      buildspec: MyJavaProject/src/buildspec-files/US_buildspec.yml
