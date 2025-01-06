@@ -15,10 +15,9 @@ phases:
       - mvn clean package 
 
 
+
 artifacts:
   files:
     - my-java-project-1.0-SNAPSHOT.jar
-
-  s3-prefix: us-jars/  
-  discard-paths: no 
-  base-directory: MyJavaProject/src/target 
+  base-directory: MyJavaProject/src/target
+  s3-prefix: usjar/
