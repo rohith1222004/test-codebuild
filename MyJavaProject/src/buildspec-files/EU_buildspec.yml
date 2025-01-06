@@ -17,7 +17,7 @@ phases:
 
 artifacts:
   files:
-    - MyJavaProject/src/target/my-java-project-1.0-SNAPSHOT.jar
-  s3-prefix: eu-jars/  
-
+    - my-java-project-1.0-SNAPSHOT.jar
+  base-directory: MyJavaProject/src/target
+  s3-prefix: eu-jars/
 
