@@ -17,7 +17,7 @@ phases:
 
 artifacts:
   files:
-    - src/target/my-java-project-1.0-SNAPSHOT.jar
+    - MyJavaProject/src/target/my-java-project-1.0-SNAPSHOT.jar
 
   s3-prefix: us-jars/  
   discard-paths: no 
