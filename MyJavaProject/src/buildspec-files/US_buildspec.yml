@@ -20,4 +20,4 @@ artifacts:
   files:
     - my-java-project-1.0-SNAPSHOT.jar
   base-directory: MyJavaProject/src/target
-  s3-prefix: build2-code-build-test/usjar/
+  s3-prefix: usjars
