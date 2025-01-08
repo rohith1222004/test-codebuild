@@ -18,7 +18,7 @@ phases:
 
 artifacts:
   files:
-    - my-java-project-1.0-SNAPSHOT.jar
-  base-directory: MyJavaProject/src/target
-  s3-prefix: eujar/
+    - MyJavaProject/src/target/my-java-project-1.0-SNAPSHOT.jar
+  name: "build_$(date +%Y-%m-%d)"
+
 
