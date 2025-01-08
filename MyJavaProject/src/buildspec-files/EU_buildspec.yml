@@ -20,9 +20,7 @@ artifacts:
   files:
     - my-java-project-1.0-SNAPSHOT.jar
   base-directory: MyJavaProject/src/target
-  s3-prefix: build_$(date +%Y-%m-%d)
-  namespace-type: NONE
   discard-paths: yes
-  name: EU_Jar
+  name: build_$(date +%Y-%m-%d)/EU_Jar
 
 
