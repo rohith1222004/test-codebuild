@@ -1,11 +1,6 @@
 version: 0.0
 os: linux
 
-files:
-  # Specify the source and destination for your application files
-  - source: / # Deploy everything from the root of the repository
-    destination: /home/ec2-user/my-app
-
 hooks:
   # Define lifecycle events with scripts to run during the deployment
   BeforeInstall:
