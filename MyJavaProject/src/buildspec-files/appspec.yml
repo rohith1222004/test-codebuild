@@ -1,0 +1,24 @@
+version: 0.0
+os: linux
+
+hooks:
+  # Define lifecycle events with scripts to run during the deployment
+  BeforeInstall:
+    - location: before_install.sh
+      timeout: 300
+      runas: root
+
+  # AfterInstall:
+  #   - location: after_install.sh
+  #     timeout: 300
+  #     runas: ec2-user
+
+  # ApplicationStart:
+  #   - location: application_start.sh
+  #     timeout: 300
+  #     runas: ec2-user
+
+  # ApplicationStop:
+  #   - location: application_stop.sh
+  #     timeout: 300
+  #     runas: ec2-user
