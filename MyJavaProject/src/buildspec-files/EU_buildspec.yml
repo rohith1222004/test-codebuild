@@ -5,6 +5,7 @@ phases:
     runtime-versions:
       java: corretto11
     commands:
+      - mv appspec-eu.yml appspec.yml
       - echo "Installing dependencies..."
       - echo "EU Builspec..."
       - cd MyJavaProject/src  
