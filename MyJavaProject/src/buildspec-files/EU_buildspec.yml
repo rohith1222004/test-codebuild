@@ -16,14 +16,15 @@ phases:
       - mvn clean package 
       - echo "Current directory structure:"
       - ls -l ../../  
-      # - mv ../../appspec-eu.yml ../../appspec.yml
-      - echo "Copying appspec-eu.yml to appspec.yml"
-      - if [ -f ../../appspec-eu.yml ]; then mv ../../appspec-eu.yml ../../appspec.yml; else echo "appspec-eu.yml not found!"; fi
+      - echo "Copying and renaming appspec-eu.yml to appspec.yml"
+      - cp ../../appspec-eu.yml ./appspec.yml  # Copy and rename the appspec-eu.yml file
+      - echo "Current directory structure:"
+      - ls -l ../../  
 
 artifacts:
   files:
     - my-java-project-1.0-SNAPSHOT.jar
-    - ../../appspec.yml
+    - appspec.yml
   base-directory: MyJavaProject/src/target
   discard-paths: yes
   name: build_$(date +%Y-%m-%d)/EU_Jar
