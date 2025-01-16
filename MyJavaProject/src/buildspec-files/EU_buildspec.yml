@@ -14,9 +14,9 @@ phases:
     commands:
       - echo "Building the JAR file..."
       - mvn clean package 
-      - ls -l target
-      - mv ../appspec-eu.yml ../appspec.yml
-
+      - echo "Current directory structure:"
+      - ls -l ../../  
+      - mv ../../appspec-eu.yml ../../appspec.yml
 
 artifacts:
   files:
