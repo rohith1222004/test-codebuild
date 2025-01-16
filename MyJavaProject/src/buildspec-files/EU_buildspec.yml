@@ -20,6 +20,7 @@ phases:
 artifacts:
   files:
     - my-java-project-1.0-SNAPSHOT.jar
+    - appspec.yml
   base-directory: MyJavaProject/src/target
   discard-paths: yes
   name: build_$(date +%Y-%m-%d)/EU_Jar
