@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       java: corretto11
     commands:
-      - mv appspec-eu.yml appspec.yml
+      # - mv appspec-eu.yml appspec.yml
       - echo "Installing dependencies..."
       - echo "EU Builspec..."
       - cd MyJavaProject/src  
@@ -15,6 +15,7 @@ phases:
       - echo "Building the JAR file..."
       - mvn clean package 
       - ls -l target
+      - mv ../appspec-eu.yml ../appspec.yml
 
 
 artifacts:
